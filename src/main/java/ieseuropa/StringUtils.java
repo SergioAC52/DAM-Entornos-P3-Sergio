@@ -2,28 +2,31 @@ package main.java.ieseuropa;
 
 public class StringUtils {
 	
-	private static int ocurrencias(String palabra, char letra) {
+	private static String repetirTodo(String palabra) {
 		
-		int contador = 0;
+		String resultado = "";
 		
 		for (int i = 0; i < palabra.length(); i++) {
 
-			if (palabra.charAt(i) == letra) {
-
-				contador++;
+			for(int j=0; j<2 ; j++) {
+				 
+				
+				resultado = resultado + palabra.charAt(i);
+				
+			}
+			
 
 			}
 
-		}
+		
 
-		return contador;
+		return resultado;
 	}
 
 
 	public static void main(String[] args) {
-		
-		System.out.print(ocurrencias("hola",'a'));
-		
+	
+	System.out.print(repetirTodo("hola"));	
 		
 	}
 
