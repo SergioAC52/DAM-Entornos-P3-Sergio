@@ -1,10 +1,9 @@
-@@ -1,59 +1,25 @@
+
 package main.java.ieseuropa;
 
 public class StringUtils {
 	
-
-private static String repetirVeces(String string, int veces) {
+	private static String repetirVeces(String string, int veces) {
 
 		String texto = "";
 
@@ -13,13 +12,13 @@ private static String repetirVeces(String string, int veces) {
 			texto = texto + " " + string;
 
 		}
-
-
+		
+		return texto;
 	}
 
-	
 
-private static String repetirTodo(String palabra) {
+
+	private static String repetirTodo(String palabra) {
 
 		String resultado = "";
 
@@ -30,7 +29,7 @@ private static String repetirTodo(String palabra) {
 				resultado = resultado + palabra.charAt(i);
 
 			}
-		
+
 
 		}
 
@@ -48,15 +47,36 @@ private static String repetirTodo(String palabra) {
 				contador++;
 
 			}
-	
+
 		}
 
 		return contador;
 	}
+	
+	private static String mayus(String palabra) {
+
+		return palabra.toUpperCase();
+
+	}
+
+	private static String minus(String palabra) {
+
+		return palabra.toLowerCase();
+
+	}
+	
+	
 	public static void main(String[] args) {
 
 		System.out.println(repetirTodo("hola"));
 		System.out.print(ocurrencias("hola",'a'));
 		System.out.print(repetirVeces("hola",5));
+		System.out.println(mayus("hola"));
+		System.out.println(minus("HOLA"));
 	}
+	
+
+
+	
 }
+
