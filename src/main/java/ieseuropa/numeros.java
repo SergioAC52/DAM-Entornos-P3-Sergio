@@ -9,6 +9,7 @@ public class numeros {
 		
 		int max=0;
 		
+		
 		for(int i=0; i<numeros.length; i++) {
 			
 			if(numeros[i] > max) {
@@ -26,13 +27,6 @@ public class numeros {
 		
 	}
 
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-		int[]nums = {2,6,1,6,10};
-		
-		System.out.print(maximo(nums));
-	}
 
 }
