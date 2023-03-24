@@ -16,6 +16,7 @@ public class numeros {
 
 			numeroAnte = numeroPrec;
 
+			
 			numeroPrec = aux + (2 * (numeroPrec));
 
 			resultado = resultado + " " + numeroPrec;
