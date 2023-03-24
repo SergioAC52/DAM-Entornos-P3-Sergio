@@ -56,4 +56,4 @@ private static String repetirTodo(String palabra) {
 		System.out.print(ocurrencias("hola",'a'));
 		System.out.print(repetirVeces("hola",5));
 	}
-	}
+}
