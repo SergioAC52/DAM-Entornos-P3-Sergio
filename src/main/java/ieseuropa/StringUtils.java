@@ -2,7 +2,22 @@ package main.java.ieseuropa;
 
 public class StringUtils {
 
-	private static String repetirTodo(String palabra) {
+private static String repetirVeces(String string, int veces) {
+
+		String texto = "";
+
+		for (int i = 0; i < veces; i++) {
+
+			texto = texto + " " + string;
+
+		}
+
+		return texto;
+
+	}
+
+
+private static String repetirTodo(String palabra) {
 
 		String resultado = "";
 
@@ -18,11 +33,11 @@ public class StringUtils {
 
 		return resultado;
 	}
-	
+
 	private static int ocurrencias(String palabra, char letra) {
-		
+
 		int contador = 0;
-		
+
 		for (int i = 0; i < palabra.length(); i++) {
 
 			if (palabra.charAt(i) == letra) {
@@ -39,7 +54,6 @@ public class StringUtils {
 
 		System.out.println(repetirTodo("hola"));
 		System.out.print(ocurrencias("hola",'a'));
-
+		System.out.print(repetirVeces("hola",5));
 	}
-
 }
