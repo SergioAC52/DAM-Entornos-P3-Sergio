@@ -13,7 +13,6 @@ public class Decimales {
 	
 	
 	public static void main(String[] args) {
-		
 	System.out.println("-----------------> ejecutar la ecuación de segundo grado ");
 	float ecuacionSegundoGrado[] =segundoGrado(1f, -10f, 25f);
 	System.out.println("Solucion positiva " + ecuacionSegundoGrado[0] + " Solucion negativa "+ ecuacionSegundoGrado[1]);
