@@ -33,11 +33,15 @@ public class numeros {
 
 		String resultado = "";
 
+		
+		
 		int numeroPrec = 2;
 
 		int numeroAnte = 1;
 
-		for (int i = 1; i < 16; i++) {
+		resultado = resultado + "0 1 2";
+		
+		for (int i = 1; i < 14; i++) {
 
 			int aux = numeroAnte;
 
