@@ -6,7 +6,17 @@ import java.util.ArrayList;
 public class numeros {
 
 
-	
+	public static boolean Primo(int numero) {
+	  
+	    for (int i = 2; i <= Math.sqrt(numero); i++) {
+	        if (numero % i == 0) {
+	            return false;
+	        }
+	    }
+	    return true;
+	}
+
+
 	private static int maximo(int[]numeros ) {
 		
 		int max=0;
@@ -86,10 +96,12 @@ public class numeros {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+
 		int[]numeros = {1,5,7,10,2,8};
 		System.out.print(suerte(25));
 		System.out.print(Pell());
 		System.out.print(maximo(numeros));
+    System.out.print(Primo(31));
 	}
 
 
