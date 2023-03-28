@@ -89,7 +89,7 @@ public class numeros {
 		int[]numeros = {1,5,7,10,2,8};
 		System.out.print(suerte(25));
 		System.out.print(Pell());
-		System.out.print(maximo(numeros);
+		System.out.print(maximo(numeros));
 	}
 
 
