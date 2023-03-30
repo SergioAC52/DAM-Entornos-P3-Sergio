@@ -27,6 +27,11 @@ public class ArrayUtils {
 			return (array[numeroCentral-1]+array[numeroCentral])/2;
 		}
 	}
+	public static int minimo(int[] array){
+		Arrays.sort(array);
+		return array[0];
+		
+	}
 	public static void main(String[] args) {
 		System.out.println(mediaArray(new int[] { 3, 14, 32, 1}));
 		System.out.println(mediaArray(new int[] {5 , 9 , 34 ,67}));
