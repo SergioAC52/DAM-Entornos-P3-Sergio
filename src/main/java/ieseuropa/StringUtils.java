@@ -68,7 +68,11 @@ public class StringUtils {
 		String textoModificado = texto.replace(" ", "");
 		return textoModificado.length();
 	}
-	
+	private static String borrarCadena(String cadena, String borrado) {
+		String cadenaFin=cadena.replace(borrado, "");
+		
+		return cadenaFin;
+	}
 	public static void main(String[] args) {
 
 		System.out.println(repetirTodo("hola"));
@@ -77,6 +81,7 @@ public class StringUtils {
 		System.out.println(mayus("hola"));
 		System.out.println(minus("HOLA"));
 		System.out.println(calcularLongitud("amijos"));
+		System.out.println(borrarCadena("Hola cara cola", "la"));
 	}
 	
 
