@@ -92,7 +92,21 @@ public class numeros {
 		return false;
 
 	}
-
+	private static boolean armstrong(int num) {
+		String numCadena = Integer.toString(num);
+		int numDigitos = numCadena.length();
+		double suma = 0;
+		for (int i = 0; i < numDigitos; i++) {
+			int cifra = Character.getNumericValue(numCadena.charAt(i));
+			double potencia = Math.pow(cifra, numDigitos);
+			suma += potencia;
+		}
+		if (suma == num) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -101,7 +115,8 @@ public class numeros {
 		System.out.print(suerte(25));
 		System.out.print(Pell());
 		System.out.print(maximo(numeros));
-    System.out.print(Primo(31));
+		System.out.print(Primo(31));
+		System.out.println(armstrong(153));
 	}
 
 
