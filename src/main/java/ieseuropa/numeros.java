@@ -107,6 +107,16 @@ public class numeros {
 			return false;
 		}
 	}
+	private static int calcularFactorial(int num) {
+		if (num < 0) {
+			num*=-1;
+		}
+		int factorial = 1;
+		for (int i = 2; i <= num; i++) {
+			factorial *= i;
+		}
+		return factorial;
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -117,6 +127,7 @@ public class numeros {
 		System.out.print(maximo(numeros));
 		System.out.print(Primo(31));
 		System.out.println(esArmstrong(153));
+		System.out.println(calcularFactorial(16));
 	}
 
 
