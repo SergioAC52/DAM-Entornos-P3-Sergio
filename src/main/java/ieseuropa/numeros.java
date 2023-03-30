@@ -92,7 +92,7 @@ public class numeros {
 		return false;
 
 	}
-	private static boolean armstrong(int num) {
+	private static boolean esArmstrong(int num) {
 		String numCadena = Integer.toString(num);
 		int numDigitos = numCadena.length();
 		double suma = 0;
@@ -116,7 +116,7 @@ public class numeros {
 		System.out.print(Pell());
 		System.out.print(maximo(numeros));
 		System.out.print(Primo(31));
-		System.out.println(armstrong(153));
+		System.out.println(esArmstrong(153));
 	}
 
 
