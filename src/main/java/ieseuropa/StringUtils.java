@@ -64,7 +64,10 @@ public class StringUtils {
 		return palabra.toLowerCase();
 
 	}
-	
+	private static int calcularLongitud(String texto) {
+		String textoModificado = texto.replace(" ", "");
+		return textoModificado.length();
+	}
 	
 	public static void main(String[] args) {
 
@@ -73,6 +76,7 @@ public class StringUtils {
 		System.out.print(repetirVeces("hola",5));
 		System.out.println(mayus("hola"));
 		System.out.println(minus("HOLA"));
+		System.out.println(calcularLongitud("amijos"));
 	}
 	
 
